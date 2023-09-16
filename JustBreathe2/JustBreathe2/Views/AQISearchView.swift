@@ -34,7 +34,7 @@ struct AQISearchView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                backgroundGradient
+                backgroundGradient.ignoresSafeArea(.all)
                 VStack {
                     CircularButton {
                         vm.getLocation()

@@ -27,13 +27,16 @@ struct AirDetailsView: View {
             }
             switch vm.state {
             case .idle:
-                Text("No Location to find, Try again later.")
-                    .foregroundColor(Color.white)
+                ZStack {
+                    backgroundGradient2.ignoresSafeArea(.all)
+                    Text("No Location to find, Try again later.")
+                        .foregroundColor(Color.white)
+                }
             case .loading:
                 ProgressView()
             case .success(let aqimodel):
                 ZStack{
-                    backgroundGradient2
+                    backgroundGradient2.ignoresSafeArea(.all)
                     VStack {
                         Text("\(aqimodel.data.city)").font(.largeTitle).fontWeight(.bold)
                         Text("Temperature: \(aqimodel.data.current.weather.tp) degrees Celsius")

@@ -14,61 +14,66 @@ struct FavoritesView: View {
     @State private var isSearching = false
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             ZStack {
+                backgroundGradient.ignoresSafeArea(.all)
                 VStack {
                     SearchBar(text: $searchText, isSearching: $isSearching)
-                    backgroundGradient
+                    backgroundGradient.ignoresSafeArea(.all)
                     List {
+                        
                         ForEach(cities, id: \.self) { item in
-                                                    NavigationLink(destination: AirDetailsView(city: item)) { // Remove extra parenthesis
-                                                        Text(item)
-                                                    }
-                                                }
+                            NavigationLink(destination: AirDetailsView(city: item)) {
+                                Text(item)
+                            }
+                        }
                     }
                 }
             }
-        }.onAppear {
+        }
+        .onAppear {
             if let favorites = UserDefaults.standard.stringArray(forKey: "FavoriteLocationsList") {
                 cities = favorites
             }
         }
     }
 }
-    struct SearchBar: View {
-        @Binding var text: String
-        @Binding var isSearching: Bool
-        
-        var body: some View {
-            HStack {
-                TextField("Search", text: $text).padding(.leading, 24)
-                
+
+struct SearchBar: View {
+    @Binding var text: String
+    @Binding var isSearching: Bool
+    
+    var body: some View {
+        HStack {
+            TextField("Search", text: $text).padding(.leading, 24)
+            
+            Button {
+                withAnimation {
+                    text = ""
+                    isSearching = false
+                }
+            } label: {
+                Image(systemName: "xmark.circle.fill").foregroundColor(.gray)
+            }
+            .padding(.trailing)
+            
+            if isSearching {
                 Button {
                     withAnimation {
                         text = ""
                         isSearching = false
                     }
                 } label: {
-                    Image(systemName: "xmark.circle.fill").foregroundColor(.gray)
-                }
-                .padding(.trailing)
-                
-                if isSearching {
-                    Button {
-                        withAnimation {
-                            text = ""
-                            isSearching = false
-                        }
-                    } label: {
-                        Text("Cancel")
-                    }.transition(.move(edge: .trailing))
-                }
-            }.padding(.horizontal)
-                .background(Color(.systemGray))
-                .cornerRadius(10)
-                .padding(.horizontal)
-                .onTapGesture {
-                    isSearching = true
-                }
+                    Text("Cancel")
+                }.transition(.move(edge: .trailing))
+            }
+        }
+        .padding(.horizontal)
+        .background(Color(.systemGray))
+        .cornerRadius(10)
+        .padding(.horizontal)
+        .onTapGesture {
+            isSearching = true
         }
     }
+}
