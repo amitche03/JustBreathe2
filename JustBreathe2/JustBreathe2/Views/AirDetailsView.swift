@@ -7,38 +7,43 @@
 
 import Foundation
 import SwiftUI
+
+var backgroundGradient2 = LinearGradient(colors: [Color.gray, Color.white], startPoint: .top, endPoint: .bottom)
+
 struct AirDetailsView: View {
+    var backgroundGradient = LinearGradient(colors: [Color.gray, Color.white], startPoint: .top, endPoint: .bottom)
     let city: String
     
     @StateObject private var locationManager = FavoriteLocationManager()
     @StateObject private var vm = AQISearchViewModel()
     
     var body: some View {
-        NavigationView {
-            
-        }.onAppear {
-            var coordinates = locationManager.findFavorite(city: city)
-            vm.getLocation()
-        }
-        switch vm.state {
-        case .idle:
-            Text("No Location to find, Try again later.")
-                .foregroundColor(Color.white)
-        case .loading:
-            ProgressView()
-        case .success(let aqimodel):
-            VStack(alignment: .leading, spacing: 4) {
-                Text("The air quality in \(aqimodel.data.city), \(aqimodel.data.state) \(aqimodel.data.country) is \(aqimodel.data.current.pollution.aqius) and the temperature is \(aqimodel.data.current.weather.tp) degrees Celsius ")
-                    .foregroundColor(Color.white)
-                    .padding(.horizontal)
-                    .background(
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(Color.gray)
-                    )
-                    .padding(.all)
+        ZStack {
+            NavigationView {
+                
+            }.onAppear {
+                var coordinates = locationManager.findFavorite(city: city)
+                vm.getLocation()
             }
-        case .error(let message):
-            Text(message)
+            switch vm.state {
+            case .idle:
+                Text("No Location to find, Try again later.")
+                    .foregroundColor(Color.white)
+            case .loading:
+                ProgressView()
+            case .success(let aqimodel):
+                ZStack{
+                    backgroundGradient2
+                    VStack {
+                        Text("\(aqimodel.data.city)").font(.largeTitle).fontWeight(.bold)
+                        Text("Temperature: \(aqimodel.data.current.weather.tp) degrees Celsius")
+                        Text("Humidity: \(aqimodel.data.current.weather.hu) percent")
+                        Text("Air Quality: \(aqimodel.data.current.pollution.aqius)")
+                    }
+                }
+            case .error(let message):
+                Text(message)
+            }
         }
     }
 }

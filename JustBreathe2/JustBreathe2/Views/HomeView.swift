@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
+
 struct HomeView: View {
     let gradient = LinearGradient(colors: [Color.gray, Color.white], startPoint: .top, endPoint: .bottom)
-    
     
     var body: some View {
             NavigationView{

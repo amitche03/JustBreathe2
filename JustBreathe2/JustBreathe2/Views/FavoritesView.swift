@@ -6,7 +6,9 @@
 //
 
 import SwiftUI
+
 struct FavoritesView: View {
+    var backgroundGradient = LinearGradient(colors: [Color.gray, Color.white], startPoint: .top, endPoint: .bottom)
     @State private var cities: [String] = []
     @State private var searchText = ""
     @State private var isSearching = false
@@ -16,6 +18,7 @@ struct FavoritesView: View {
             ZStack {
                 VStack {
                     SearchBar(text: $searchText, isSearching: $isSearching)
+                    backgroundGradient
                     List {
                         ForEach(cities, id: \.self) { item in
                                                     NavigationLink(destination: AirDetailsView(city: item)) { // Remove extra parenthesis
