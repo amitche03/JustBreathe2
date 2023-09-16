@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3CCED8F2AB62A2F00EB97AA /* JustBreathe2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCED8E2AB62A2F00EB97AA /* JustBreathe2App.swift */; };
+		D3CCED912AB62A2F00EB97AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCED902AB62A2F00EB97AA /* ContentView.swift */; };
+		D3CCED932AB62A3000EB97AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CCED922AB62A3000EB97AA /* Assets.xcassets */; };
+		D3CCED962AB62A3000EB97AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3CCED952AB62A3000EB97AA /* Preview Assets.xcassets */; };
+		D3CCEDA32AB62AF100EB97AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDA22AB62AF100EB97AA /* HomeView.swift */; };
+		D3CCEDA52AB62B2600EB97AA /* AQISearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDA42AB62B2600EB97AA /* AQISearchView.swift */; };
+		D3CCEDA72AB62B4200EB97AA /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDA62AB62B4200EB97AA /* FavoritesView.swift */; };
+		D3CCEDA92AB62B8200EB97AA /* AirDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDA82AB62B8200EB97AA /* AirDetailsView.swift */; };
+		D3CCEDAB2AB62BAF00EB97AA /* AQISearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDAA2AB62BAF00EB97AA /* AQISearchViewModel.swift */; };
+		D3CCEDAD2AB62BE700EB97AA /* AQISearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDAC2AB62BE700EB97AA /* AQISearchService.swift */; };
+		D3CCEDAF2AB62C3A00EB97AA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDAE2AB62C3A00EB97AA /* LocationManager.swift */; };
+		D3CCEDB12AB62C5E00EB97AA /* FavoriteLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDB02AB62C5E00EB97AA /* FavoriteLocationManager.swift */; };
+		D3CCEDB32AB62CA100EB97AA /* AQIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDB22AB62CA100EB97AA /* AQIModel.swift */; };
+		D3CCEDB52AB62CB900EB97AA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDB42AB62CB900EB97AA /* Location.swift */; };
+		D3CCEDB72AB62CF600EB97AA /* LocationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CCEDB62AB62CF600EB97AA /* LocationState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3CCED8B2AB62A2F00EB97AA /* JustBreathe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustBreathe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CCED8E2AB62A2F00EB97AA /* JustBreathe2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustBreathe2App.swift; sourceTree = "<group>"; };
+		D3CCED902AB62A2F00EB97AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3CCED922AB62A3000EB97AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3CCED952AB62A3000EB97AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3CCEDA22AB62AF100EB97AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D3CCEDA42AB62B2600EB97AA /* AQISearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQISearchView.swift; sourceTree = "<group>"; };
+		D3CCEDA62AB62B4200EB97AA /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		D3CCEDA82AB62B8200EB97AA /* AirDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDetailsView.swift; sourceTree = "<group>"; };
+		D3CCEDAA2AB62BAF00EB97AA /* AQISearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQISearchViewModel.swift; sourceTree = "<group>"; };
+		D3CCEDAC2AB62BE700EB97AA /* AQISearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQISearchService.swift; sourceTree = "<group>"; };
+		D3CCEDAE2AB62C3A00EB97AA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D3CCEDB02AB62C5E00EB97AA /* FavoriteLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocationManager.swift; sourceTree = "<group>"; };
+		D3CCEDB22AB62CA100EB97AA /* AQIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIModel.swift; sourceTree = "<group>"; };
+		D3CCEDB42AB62CB900EB97AA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D3CCEDB62AB62CF600EB97AA /* LocationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3CCED882AB62A2F00EB97AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3CCED822AB62A2F00EB97AA = {
+			isa = PBXGroup;
+			children = (
+				D3CCED8D2AB62A2F00EB97AA /* JustBreathe2 */,
+				D3CCED8C2AB62A2F00EB97AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3CCED8C2AB62A2F00EB97AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCED8B2AB62A2F00EB97AA /* JustBreathe2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3CCED8D2AB62A2F00EB97AA /* JustBreathe2 */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCED9F2AB62A7800EB97AA /* Models */,
+				D3CCED9E2AB62A6A00EB97AA /* ViewModels */,
+				D3CCED9D2AB62A5D00EB97AA /* Services */,
+				D3CCED9C2AB62A4B00EB97AA /* Views */,
+				D3CCED8E2AB62A2F00EB97AA /* JustBreathe2App.swift */,
+				D3CCED902AB62A2F00EB97AA /* ContentView.swift */,
+				D3CCED922AB62A3000EB97AA /* Assets.xcassets */,
+				D3CCED942AB62A3000EB97AA /* Preview Content */,
+			);
+			path = JustBreathe2;
+			sourceTree = "<group>";
+		};
+		D3CCED942AB62A3000EB97AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCED952AB62A3000EB97AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3CCED9C2AB62A4B00EB97AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCEDA22AB62AF100EB97AA /* HomeView.swift */,
+				D3CCEDA42AB62B2600EB97AA /* AQISearchView.swift */,
+				D3CCEDA62AB62B4200EB97AA /* FavoritesView.swift */,
+				D3CCEDA82AB62B8200EB97AA /* AirDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3CCED9D2AB62A5D00EB97AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCEDAC2AB62BE700EB97AA /* AQISearchService.swift */,
+				D3CCEDAE2AB62C3A00EB97AA /* LocationManager.swift */,
+				D3CCEDB02AB62C5E00EB97AA /* FavoriteLocationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D3CCED9E2AB62A6A00EB97AA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCEDAA2AB62BAF00EB97AA /* AQISearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3CCED9F2AB62A7800EB97AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3CCEDB22AB62CA100EB97AA /* AQIModel.swift */,
+				D3CCEDB42AB62CB900EB97AA /* Location.swift */,
+				D3CCEDB62AB62CF600EB97AA /* LocationState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3CCED8A2AB62A2F00EB97AA /* JustBreathe2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CCED992AB62A3000EB97AA /* Build configuration list for PBXNativeTarget "JustBreathe2" */;
+			buildPhases = (
+				D3CCED872AB62A2F00EB97AA /* Sources */,
+				D3CCED882AB62A2F00EB97AA /* Frameworks */,
+				D3CCED892AB62A2F00EB97AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustBreathe2;
+			productName = JustBreathe2;
+			productReference = D3CCED8B2AB62A2F00EB97AA /* JustBreathe2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3CCED832AB62A2F00EB97AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D3CCED8A2AB62A2F00EB97AA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D3CCED862AB62A2F00EB97AA /* Build configuration list for PBXProject "JustBreathe2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3CCED822AB62A2F00EB97AA;
+			productRefGroup = D3CCED8C2AB62A2F00EB97AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3CCED8A2AB62A2F00EB97AA /* JustBreathe2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3CCED892AB62A2F00EB97AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CCED962AB62A3000EB97AA /* Preview Assets.xcassets in Resources */,
+				D3CCED932AB62A3000EB97AA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3CCED872AB62A2F00EB97AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CCEDA92AB62B8200EB97AA /* AirDetailsView.swift in Sources */,
+				D3CCEDA72AB62B4200EB97AA /* FavoritesView.swift in Sources */,
+				D3CCEDB72AB62CF600EB97AA /* LocationState.swift in Sources */,
+				D3CCEDB32AB62CA100EB97AA /* AQIModel.swift in Sources */,
+				D3CCEDB12AB62C5E00EB97AA /* FavoriteLocationManager.swift in Sources */,
+				D3CCEDAB2AB62BAF00EB97AA /* AQISearchViewModel.swift in Sources */,
+				D3CCEDAD2AB62BE700EB97AA /* AQISearchService.swift in Sources */,
+				D3CCEDA32AB62AF100EB97AA /* HomeView.swift in Sources */,
+				D3CCED912AB62A2F00EB97AA /* ContentView.swift in Sources */,
+				D3CCEDA52AB62B2600EB97AA /* AQISearchView.swift in Sources */,
+				D3CCED8F2AB62A2F00EB97AA /* JustBreathe2App.swift in Sources */,
+				D3CCEDB52AB62CB900EB97AA /* Location.swift in Sources */,
+				D3CCEDAF2AB62C3A00EB97AA /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3CCED972AB62A3000EB97AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3CCED982AB62A3000EB97AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3CCED9A2AB62A3000EB97AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustBreathe2/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F8ZBY3Y85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "(\"Hello Gamer\")";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mitchell-s-anderdson-unc.edu.JustBreathe2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3CCED9B2AB62A3000EB97AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JustBreathe2/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F8ZBY3Y85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "(\"Hello Gamer\")";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mitchell-s-anderdson-unc.edu.JustBreathe2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3CCED862AB62A2F00EB97AA /* Build configuration list for PBXProject "JustBreathe2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CCED972AB62A3000EB97AA /* Debug */,
+				D3CCED982AB62A3000EB97AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CCED992AB62A3000EB97AA /* Build configuration list for PBXNativeTarget "JustBreathe2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CCED9A2AB62A3000EB97AA /* Debug */,
+				D3CCED9B2AB62A3000EB97AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3CCED832AB62A2F00EB97AA /* Project object */;
+}
